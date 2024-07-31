@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>August 2024 Calendar</title>
+    <style>
+        html ,body{
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-direction: column; /* Align items in a column */
+        }
+        body {
+            background-image: url('https://wallpapers.com/images/hd/google-calendar-background-tfpb8g86k386xz0l.jpg'); /* Replace with your image URL */
+            background-size:cover; /* Make sure the image covers the whole page */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+        }
+        table {
+             /* Teal */
+            width: 70%;
+            height: 70%;
+            margin: 0 auto;
+            border-radius: 2%;
+            border-spacing: 10px;
+        }
+        td, th {
+             /* Darker Teal */
+            text-align: center;
+            vertical-align: middle; /* Center align text vertically */
+            border-radius: 40%;
+        }
+        td {
+            width: 200px;
+            height: 30px;
+            font-size: small;
+            border-radius: 5px;
+        }
+        th {
+            width: 200px;
+            height: 30px;
+            font-size: large;
+            border-radius: 5px;
+        }
+        /* Apply background colors to cells using RGB combinations */
+        tr:nth-child(2n) td:nth-child(1) {
+            background-color: rgb(255, 199, 199); /* Light Red */
+        }
+        tr:nth-child(2n) td:nth-child(2) {
+            background-color: rgb(199, 255, 199); /* Light Green */
+        }
+        tr:nth-child(2n) td:nth-child(3) {
+            background-color: rgb(199, 199, 255); /* Light Blue */
+        }
+        tr:nth-child(2n) td:nth-child(4) {
+            background-color: rgb(255, 255, 199); /* Light Yellow */
+        }
+        tr:nth-child(2n) td:nth-child(5) {
+            background-color: rgb(255, 199, 255); /* Light Pink */
+        }
+        tr:nth-child(2n) td:nth-child(6) {
+            background-color: rgb(199, 255, 255); /* Light Cyan */
+        }
+        tr:nth-child(2n) td:nth-child(7) {
+            background-color: rgb(255, 255, 199); /* Light Yellow */
+        }
+        tr:nth-child(2n+1) td:nth-child(1) {
+            background-color: rgb(199, 255, 199); /* Light Green */
+        }
+        tr:nth-child(2n+1) td:nth-child(2) {
+            background-color: rgb(199, 199, 255); /* Light Blue */
+        }
+        tr:nth-child(2n+1) td:nth-child(3) {
+            background-color: rgb(255, 255, 199); /* Light Yellow */
+        }
+        tr:nth-child(2n+1) td:nth-child(4) {
+            background-color: rgb(255, 199, 255); /* Light Pink */
+        }
+        tr:nth-child(2n+1) td:nth-child(5) {
+            background-color: rgb(199, 255, 255); /* Light Cyan */
+        }
+        tr:nth-child(2n+1) td:nth-child(6) {
+            background-color: rgb(255, 255, 199); /* Light Yellow */
+        }
+        tr:nth-child(2n+1) td:nth-child(7) {
+            background-color: rgb(255, 199, 199); /* Light Red */
+        }
+        tr:nth-child(2) td:nth-child(6), tr:nth-child(4) td:nth-child(6){
+            background-color:green; /* Light Red */
+        }h1 {
+            text-align: center;
+            margin-top:20px;
+            margin-bottom:10px;
+            color: #15db0a; /* Darker Teal */
+            font-family:'Times New Roman', Times, serif;
+        }
+        .odd td:hover:nth-child(n){
+        background-color: yellow;
+    }
+    tr:hover:nth-child(n) :hover:nth-child(n){
+        background-color: red;
+    }
+    tr:hover:nth-child(n) :hover:nth-child(2n){
+        background-color: blue;
+    }
+    tr:hover:nth-child(2n) :hover:nth-child(n){
+        background-color: yellow;
+    }
+    tr:hover:nth-child(2n) :hover:nth-child(2n){
+        background-color:blueviolet;
+    }
+    </style>
+</head>
+<body>
+    <h1>AUGUST 2024</h1>
+    <table>
+        <tr>
+            <th>SUNDAY</th>
+            <th>MONDAY</th>
+            <th>TUESDAY</th>
+            <th>WEDNESDAY</th>
+            <th>THURSDAY</th>
+            <th>FRIDAY</th>
+            <th>SATURDAY</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1<br>Ganesh Chaturthi</td>
+            <td>2<br>World Breastfeeding Week</td>
+        </tr>
+        <tr>
+            <td>3<br>Friendship Day</td>
+            <td>4<br>National Chocolate Chip Cookie Day</td>
+            <td>5<br>World Teachers' Day</td>
+            <td>6<br>National Mustard Day</td>
+            <td>7<br>National Forgiveness Day</td>
+            <td>8<br>International Cat Day</td>
+            <td>9<br>National Book Lovers Day</td>
+        </tr>
+        <tr>
+            <td>10<br>World Lion Day</td>
+            <td>11<br>National Son's Day</td>
+            <td>12<br>World Elephant Day</td>
+            <td>13<br>Left-Handers Day</td>
+            <td>14<br>National Relaxation Day</td>
+            <td>15<br>Independence Day</td>
+            <td>16<br>National Roller Coaster Day</td>
+        </tr>
+        <tr>
+            <td>17<br>National Thrift Shop Day</td>
+            <td>18<br>National Ice Cream Pie Day</td>
+            <td>19<br>World Humanitarian Day</td>
+            <td>20<br>National Radio Day</td>
+            <td>21<br>National Senior Citizens Day</td>
+            <td>22<br>National Be an Angel Day</td>
+            <td>23<br>National Sponge Cake Day</td>
+        </tr>
+        <tr>
+            <td>24<br>National Waffle Day</td>
+            <td>25<br>National Kiss and Make Up Day</td>
+            <td>26<br>National Dog Day</td>
+            <td>27<br>National Just Because Day</td>
+            <td>28<br>National Bow Tie Day</td>
+            <td>29<br>National Chop Suey Day</td>
+            <td>30<br>National Toasted Marshmallow Day</td>
+        </tr>
+        <tr>
+            <td>31<br>National Trail Mix Day</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

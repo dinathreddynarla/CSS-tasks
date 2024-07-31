@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chess</title>
+</head>
+<style>
+    html,body{
+        background-color: aqua; 
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+    table{
+        border: 2px solid black;
+        width:70%;
+        height: 70%;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+    td{
+        width: 80px;
+        height:60px;
+        font-size: xx-large;
+        text-align: center;
+    }
+    td:nth-child(odd),.odd td:nth-child(even) {
+        background-color: purple;
+    }
+    td:nth-child(even) ,.odd td:nth-child(odd){
+        background-color: white;
+    }
+    .odd td:hover:nth-child(n){
+        background-color: yellow;
+    }
+    td:hover:nth-child(n),.odd td:hover:nth-child(2n){
+        background-color:red;
+    }
+    td:hover:nth-child(2n),.odd td:hover:nth-child(3n){
+        background-color:green;
+    }
+    td:hover:nth-child(3n),.odd td:hover:nth-child(4n){
+        background-color:blue;
+    }
+    td:hover:nth-child(4n){
+        background-color:yellow;
+    }
+    
+    
+    
+   
+</style>
+<body>
+    <table>
+        <tr class="odd">
+            <td>&#9814;</td>
+            <td>&#9816;</td>
+            <td>&#9815;</td>
+            <td>&#9812;</td>
+            <td>&#9813;</td>
+            <td>&#9815;</td>
+            <td>&#9816;</td>
+            <td>&#9814;</td>
+        </tr>
+        <tr>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+            <td>&#9817;</td>
+        </tr>
+        <tr class="odd">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="odd">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="odd">
+            <td>&#9823;</td>
+            <td>&#9823;</td>
+            <td>&#9823;</td>
+            <td>&#9823;</td>
+            <td>&#9823;</td>
+            <td>&#9823;</td>
+            <td>&#9823;</td>
+            <td>&#9823;</td>
+        </tr>
+        <tr>
+            <td>&#9820;</td>
+            <td>&#9822;</td>
+            <td>&#9821;</td>
+            <td>&#9819;</td>
+            <td>&#9818;</td>
+            <td>&#9821;</td>
+            <td>&#9822;</td>
+            <td>&#9820;</td>
+        </tr>
+    </table>
+</body>
+</html>
