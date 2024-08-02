@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #8faadb;
+            margin: 0;
+        }
+        .container{
+            width: 400px;
+            height: 600px;
+            border: 2px solid black;
+            background-image: url('https://wallpapers.com/images/hd/google-calendar-background-tfpb8g86k386xz0l.jpg');
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        .header{
+            background-color: #075e54;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+        .info{
+            display:flex;
+            align-items: center;
+            position: relative;
+        }
+        .calling{
+            position: absolute;
+            right: 0px;
+        }
+        .call{
+            width: 40px;
+            height: 40px; 
+            padding: 5px;
+            border-radius: 50%;
+        }
+        .profile-pic{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+        .name{
+            font-size: 20px;
+        }
+        .chat{
+            padding: 5px;
+            display: flex;
+            overflow-y:scroll;
+            scrollbar-width: none;
+            flex-grow: 1;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        .message{
+            border-radius: 10px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            font-size: 15px;
+            position: relative;
+            max-width: 80%;
+            min-width: 40%;
+            
+        }
+        .sent{
+            background-color: #dcf8c6;
+            align-self: flex-end;
+            padding:5px;
+
+        }
+        .recieved{
+            background-color: #fff;
+            align-self: flex-start;
+            padding:5px;
+        }
+        .text{  
+            margin-bottom: 15px; 
+            display: block;
+        }
+        .time{
+            font-size: 13px;
+            color: #888;
+            position: absolute;
+            bottom: 1px;
+            right: 3px;
+
+        }
+        .chatimg,.vid{
+            width:300px;
+            height: fit-content;
+            margin-bottom: 10px;
+        }
+        .date{
+            background-color:lightgreen;
+            width: 50px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 10px;
+            align-self: center;
+            position: sticky;
+            top: 0; 
+            z-index: 1;      
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="info">
+                <img src="profile-pic.png" alt="profilepic" class="profile-pic">
+                <div class="name">Dinath</div>
+                <div class="calling">
+                    <img src="voc.png" alt="videocall" class="call">
+                    <img src="vc.png" alt="videocall" class="call">
+                </div>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="chat">
+                <!-- Day 1: Episode 1 -->
+                <span class="date">16 June</span>
+                <div class="message sent">
+                    <span class="text"> Just finished Episode 1!</span>
+                    <span class="time">09:00AM</span>
+                </div>
+                <div class="message recieved">
+                    <span class="text">What a start!</span>
+                    <span class="time">09:15AM</span>
+                </div>
+                <div class="message recieved">
+                    <img src="e1.jpg" alt="e1" class="chatimg">
+                    <span class="time">09:15AM</span>
+                </div>
+                <div class="message sent">
+                    <span class="text">Targeryan with Stark &#128561;.</span>
+                    <span class="time">09:30AM</span>
+                </div>
+                <div class="message sent">
+                    <span class="text">Rhaenyra’s struggle was well done.</span>
+                    <span class="time">09:30AM</span>
+                </div>
+                <div class="message recieved">
+                    <span class="text">Daemon’s entrance was dramatic!</span>
+                    <span class="time">09:45AM</span>
+                </div>
+            
+                <!-- Day 2: Episode 2 -->
+                <span class="date">23 June</span>
+                <div class="message sent">
+                    <span class="text">Episode 2 was action-packed!</span>
+                    <span class="time">08:30AM</span>
+                </div>
+                <div class="message recieved">
+                    <span class="text">Dragon fight was incredible.</span>
+                    <span class="time">08:45AM</span>
+                </div>
+                <div class="message sent">
+                    <span class="text">Rhaenyra’s decisions were bold.</span>
+                    <span class="time">09:00AM</span>
+                </div>
+            
+                <!-- Day 3: Episode 3 -->
+                <span class="date">30 June</span>
+                <div class="message sent">
+                    <span class="text">Episode 3 had a big twist!</span>
+                    <span class="time">11:00AM</span>
+                </div>
+                <div class="message recieved">
+                    <span class="text">The betrayal was shocking.</span>
+                    <span class="time">11:15AM</span>
+                </div>
+                <div class="message sent">
+                    <span class="text">Daemon’s move added drama.</span>
+                    <span class="time">11:30AM</span>
+                </div>
+            
+                <!-- Day 4: Episode 4 -->
+                <span class="date">07 July</span>
+                <div class="message sent">
+                    <span class="text">Episode 4 was intense!</span>
+                    <span class="time">10:00AM</span>
+                </div>
+                <div class="message recieved">
+                    <span class="text">The battle scenes were epic.</span>
+                    <span class="time">10:15AM</span>
+                </div>
+                <div class="message recieved">
+                    <img src="e2.jpg" alt="e1" class="chatimg">
+                    <span class="time">10:16AM</span>
+                </div>
+                <div class="message sent">
+                    <span class="text">Rhaenys death was tragic &#128531;.</span>
+                    <span class="time">10:17AM</span>
+                </div>
+            
+                <!-- Day 5: Episode 5 -->
+                <span class="date">14 July</span>
+                <div class="message sent">
+                    <span class="text">Just watched Episode 5. Amazing!</span>
+                    <span class="time">02:00PM</span>
+                </div>
+                <div class="message recieved">
+                    <span class="text">The plot twists were crazy.</span>
+                    <span class="time">02:15PM</span>
+                </div>
+                <div class="message sent">
+                    <span class="text">Daemon’s storyline is fascinating.</span>
+                    <span class="time">02:30PM</span>
+                </div>
+            
+                <!-- Day 6: Episode 6 -->
+                <span class="date">21 July</span>
+                <div class="message sent">
+                    <span class="text">Episode 6 was a game-changer!</span>
+                    <span class="time">09:00AM</span>
+                </div>
+                <div class="message recieved">
+                    <span class="text">The reveal was shocking.</span>
+                    <span class="time">09:15AM</span>
+                </div>
+                <div class="message sent">
+                    <img src="e6.jpg" alt="e1" class="chatimg">
+                    <span class="time">09:15AM</span>
+                </div>
+                <div class="message sent">
+                    <span class="text">Adam of Hull, Rider of SeaSmoke &#127881;</span>
+                    <span class="time">09:16AM</span>
+                </div>
+                <div class="message sent">
+                    <span class="text">Character development is superb.</span>
+                    <span class="time">09:16AM</span>
+                </div>
+            
+                <!-- Day 7: Episode 7 -->
+                <span class="date">28 July</span>
+                <div class="message sent">
+                    <span class="text">Episode 7 was intense! That cliffhanger!</span>
+                    <span class="time">07:00PM</span>
+                </div>
+                <div class="message recieved">
+                    <span class="text">The ending was jaw-dropping.</span>
+                    <span class="time">07:15PM</span>
+                </div>
+                <div class="message sent">
+                    <video controls autoplay loop class="vid">
+                        <source src="vid.mp4">
+                    </video>                    
+                    <span class="time">07:30PM</span>
+                </div>
+                <div class="message sent">
+                    <span class="text">Epic Scene &#129327;&#129327;&#129327;</span>
+                    <span class="time">07:30PM</span>
+                </div>
+                <div class="message sent">
+                    <span class="text">Looking forward to the finale!</span>
+                    <span class="time">07:31PM</span>
+                </div>
+            </div>
+          </div>
+        
+    </div>
+</body>
+</html>
