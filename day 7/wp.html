@@ -119,7 +119,7 @@
             z-index: 1;      
          }
          .details {
-            background-color: lightgreen;
+            background-color:ivory;
             position: absolute;
             display: none;
             top:0px;
@@ -133,14 +133,21 @@
             direction: flex;
             align-items: center;
          }
-         .dpic{
+         .dpic {
             margin: 10px;
             border-radius: 50%;
-            width: 60px;
-            height: 60px;
-         }
+            width: 100px;
+            height: 100px;
+            transition: transform 0.3s ease-in-out,box-shadow 0.3s ease; 
+            transform-origin: top center;
+        }
+        .dpic:hover {
+            transform: scale(3); 
+            box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+        }
          .dname,.d2name{
             font-size: 30px;
+            color: black;
             padding: 5px;
          }
          .d2name{
