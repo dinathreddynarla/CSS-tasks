@@ -29,13 +29,16 @@
             background-color: #075e54;
             color: #fff;
             padding: 10px;
+            display: flex;
+            position: relative;
             border-radius: 10px;
 
         }
         .info{
             display:flex;
             align-items: center;
-            position: relative;
+            cursor: pointer;
+            
         }
         .calling{
             position: absolute;
@@ -55,14 +58,15 @@
             margin-left: 10px;
         }
         .name{
-            font-size: 20px;
+            font-size: 30px;
+            color: white;
+
         }
         .chat{
             padding: 5px;
             display: flex;
             overflow-y:scroll;
             scrollbar-width: none;
-            flex-grow: 1;
             flex-direction: column;
             border-radius: 10px;
         }
@@ -100,8 +104,7 @@
 
         }
         .chatimg,.vid{
-            width:300px;
-            height: fit-content;
+            width:100%;
             margin-bottom: 10px;
         }
         .date{
@@ -115,22 +118,65 @@
             top: 0; 
             z-index: 1;      
          }
+         .details {
+            background-color: lightgreen;
+            position: absolute;
+            display: none;
+            top:0px;
+            left: 0px;
+            height: 300px;
+            width: 100%;
+            border-radius: 10px;
+            z-index: 10;
+         }
+         .profile{
+            direction: flex;
+            align-items: center;
+         }
+         .dpic{
+            margin: 10px;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+         }
+         .dname,.d2name{
+            font-size: 30px;
+            padding: 5px;
+         }
+         .d2name{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+         }
+         .info:focus ~ .details {
+            display: flex;
+            flex-direction: column;
+         }
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div class="info">
-                <img src="profile-pic.png" alt="profilepic" class="profile-pic">
-                <div class="name">Dinath</div>
+                <div class="info" tabindex="0">
+                    <img src="profile-pic.png" alt="profilepic" class="profile-pic">
+                    <span class="name">Dinath</span>
+                </div>
+                <div class="details profile">
+                    <img src="profile-pic.png" alt="profilepic" class="dpic">
+                    <span class="dname">Dinath</span>
+                    <span class="dname">6309574687</span>
+                    <div class="dcalling">
+                        <img src="voc.png" alt="videocall" class="call">
+                        <img src="vc.png" alt="videocall" class="call">
+                    </div>
+                    <span class="d2name">Believe in yourself</span>
+                </div>
                 <div class="calling">
                     <img src="voc.png" alt="videocall" class="call">
                     <img src="vc.png" alt="videocall" class="call">
                 </div>
-            </div>
         </div>
         <div class="chat">
-            <div class="chat">
                 <!-- Day 1: Episode 1 -->
                 <span class="date">16 June</span>
                 <div class="message sent">
@@ -269,7 +315,6 @@
                     <span class="text">Looking forward to the finale!</span>
                     <span class="time">07:31PM</span>
                 </div>
-            </div>
           </div>
         
     </div>
