@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed Sheeran - Perfect Lyrics</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            background: url('./22SHEERAN-articleLarge.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 100vh;
+            margin: 0;
+           
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .musicbox {
+            width: 40%;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 50vh;
+            
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        audio {
+            width: 300px;
+            height: 40px;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 10em;
+            border-radius: 50%;
+            animation: rotate 10s infinite linear;
+        }
+        h2{
+            background-color: azure;
+            color: black;
+            border-radius: 10px;
+        }
+
+        @keyframes rotate {
+            to {
+                rotate: 360deg;
+            }
+        }
+
+        .waves {
+            display: flex;
+            gap: 3px;
+            margin: 10px 0;
+        }
+
+        .wav {
+            height: 3em;
+            width: 0.3em;
+            background-color: green;
+            border-radius: 10px;
+            animation: wave 1s infinite ease-in-out ;
+            
+        }
+
+        .wav:nth-child(2n) {
+            animation-delay: 0.1s;
+        }
+
+        .wav:nth-child(3n) {
+            animation-delay: 0.2s;
+        }
+
+        .wav:nth-child(4n) {
+            animation-delay: 0.3s;
+        }
+
+        .wav:nth-child(5n) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes wave {
+            0%, 100% {
+                transform: scaleY(1);
+            }
+            50% {
+                transform: scaleY(0.5);
+            }
+        }
+
+</style>
+</head>
+<body>
+    <div class="musicbox">
+        <img src="./perfect.jpg" alt="perfect">
+        <h2>Perfect - Ed Sheeran</h2>
+        <div class="waves">
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+            <div class="wav"></div>
+        </div>
+        <audio controls>
+            <source src="./Perfect-(Pagalworld).mp3" type="audio/mp3">
+        </audio>
+    </div>
+    
+</body>
+</html>

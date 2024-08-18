@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        .header{
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            height:10%;
+        }
+        .logo{
+            font-weight: 800;
+            margin-left:3%;
+            color:  rgba(10, 9, 9, 0.7);
+            font-size: 1.3em;
+            letter-spacing:2px;
+            padding: 10px;
+        }
+        .logo:hover{
+            background-color: lightgray;
+        }
+        .desktop{
+            display: flex;
+            justify-content: space-between;
+        }
+        .desktop a{
+            font-weight: 800;
+            text-decoration: none;
+            color: rgba(10, 9, 9, 0.7);
+            letter-spacing: 2px;
+            padding:10px; 
+        }
+        .desktop a:hover{
+            background-color: lightgray;
+        }
+        .ext{
+            display: none;
+        }
+        .mobile{
+            display: none;
+        }
+        .first{
+            height:100vh;
+            width:100%;
+            background-image: url("hamburger.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            
+        }
+        .name{
+            margin-left: 5%;
+            margin-bottom:2%;
+            font-size:xx-large;
+            color: rgba(10, 9, 9, 0.6);
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .second{
+            display: flex;
+            justify-content:center;
+            padding-top: 64px;           
+            width: 100%;
+            margin:5%;
+            gap: 2%;
+        }
+        .img1{
+            width: 30%;
+            padding: 2%;
+            opacity: 70%;
+            z-index: -10;
+        }
+        .sec{
+            width: 35%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sec p{
+            font-size: 1.1em;
+            line-height: 1.5em;
+        }
+        .third{
+            display: flex;
+            justify-content:center;
+            padding-top: 64px;
+            padding-bottom: 64px;
+            width: 100%;
+            height: 100vh;
+            margin:5%;
+            gap: 2%;
+        }
+        .menu{
+            height: 100%;
+            width: 35%;
+            display:flex;
+            flex-direction: column;
+            row-gap: 7%;
+        }
+        .ourmenu{
+            font-size:xx-large;
+            letter-spacing: 5px; 
+            font-weight:400;
+            text-align:center;
+        }
+        .menu div{
+            height: 15%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20%;
+
+        }
+        .item {
+            font-size: 1.3em;
+            font-weight: 400;
+            letter-spacing: 0.2em;
+        }
+        .info{
+            font-size: 1em;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 100vh;
+            justify-content: center;
+        }
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 50vh;
+            
+        }
+        input {
+            height: 20%;
+            padding-left: 30px;
+            border: none;
+            border-bottom: 2px solid ;
+        }
+        .ct1{
+            font-size: 40px; 
+            letter-spacing: 5px; 
+            margin-bottom:40px;
+        }
+        button{
+            margin: 20px;
+            width: 200px;
+            padding: 10px;
+            border:none;
+        }
+        button:hover{
+            background-color: lightgray;
+        }
+        footer{
+            width: 100%;
+            height: 90px;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (max-width:576px){
+            .logo{
+                font-size: 1em;
+            }
+            
+            .desktop{
+                display: none;
+            }
+            .ext{
+                display:flex;
+                width: 40px;
+                height: auto;
+                cursor: pointer;
+            }
+            .mobile{
+                display: none;
+                flex-direction: column;
+                background-color: black;
+                position: absolute;
+                top: 10%;
+                right: 0;
+                width: 100%;
+                z-index: 10;
+               
+            }
+            .mobile a{
+                font-weight: 800;
+                text-decoration: none;
+                color:rgba(10, 9, 9, 0.7);;
+                letter-spacing: 2px;
+                padding:10px; 
+                background-color: white;
+            }
+            .mobile a:hover{
+                background-color: lightgray;
+            }
+            .ext:focus ~.mobile,.mobile:hover {
+                display: flex;
+            }
+            .first{
+                height: 50vh;
+            }
+            .name{
+                font-size:x-large;
+            }
+            .second{
+                flex-direction: column;
+                align-items: center;
+            }
+            .img1{
+                width: 60%;  
+                height: 70vh;
+                margin: 10px;
+            }
+            .sec{
+                width: 80%;
+            }
+            .sec p{
+                font-size: 1em;
+                line-height: 1.2em;
+            }
+            .third{
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+            }
+            .menu{
+                width: 70%;
+                row-gap:20px;
+            }
+            .menu div{
+                row-gap: 5px;
+    
+            }
+            .item {
+                font-size: 1em;
+                font-weight: 400;
+                letter-spacing: 0.1em;
+            }
+            .info{
+                font-size: 0.8em;
+                color: rgba(0, 0, 0, 0.6);
+            }
+            .contact{
+                height: 70vh;
+                width: 70%;
+            }
+            input {
+                height: 30px;
+                padding-left: 5px;
+            }
+            .ct1{
+                font-size: x-large;
+                letter-spacing: 3px;
+            }
+            .ct{
+                font-size:medium;
+            }
+            button{  
+                margin: 0; 
+                margin-top: 10px;
+                margin-bottom: 30px;
+
+                width: 150px;  
+                font-size:13px; 
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            footer{
+                margin-top: 20px;
+                width: 100%;
+                height: 40px;
+                background-color: #f1f1f1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }    
+        }
+
+    </Style>
+</head>
+<body>
+    <header class="header">
+        <span class="logo">Gourmet au catering</span>
+        <img src="menu.png" class="ext" tabindex="0">
+        <div class="mobile">
+            <a href="#about" class="content">About</a>
+            <a href="#menu" class="content">Menu</a>
+            <a href="#contact" class="content">Contact</a>
+        </div>
+        <nav class="desktop">
+            <a href="#about" class="content">About</a>
+            <a href="#menu" class="content">Menu</a>
+            <a href="#contact" class="content">Contact</a>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="first" >
+            <span class="name">Le Catering</span>
+        </section>
+        <section class="second" id="about">
+            <img src="tablesetting2.jpg" alt="" class="img1">
+            <div class="sec">
+                <h1 style="font-size:xx-large;letter-spacing: 5px; font-weight:400">About Catering</h1>
+                <span style="letter-spacing: 5px; ">Tradition since 1889</span>
+                <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+                <p style="color: rgba(0, 0, 0, 0.5)">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </section>
+        <section class="third" id="menu">
+            <div class="menu">
+                <span class="ourmenu">Our Menu</span>
+                <div>
+                    <span class="item">Bread Basket</span>
+                    <span class="info">Assortment of fresh baked fruit breads and muffins 5.50</span>
+                </div>
+                <div>
+                    <span class="item">Honey Almond Granola with Fruits</span>
+                    <span class="info">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</span>
+                </div>
+                <div>
+                    <span class="item">Belgian Waffle</span>
+                    <span class="info">Vanilla flavored batter with malted flour 7.50</span>
+                </div>
+                <div>
+                    <span class="item">Scrambled eggs</span>
+                    <span class="info">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</span>
+                </div>
+                <div>
+                    <span class="item">Blueberry Pancakes</span>
+                    <span class="info">With syrup, butter and lots of berries 8.50</span>
+                </div>    
+            </div>
+            <img src="tablesetting.jpg" alt="" class="img1">
+        </section>
+        <section class="contact" id="contact">
+            <span class="ct1">Contact</span>
+            <span class="ct" style="margin-bottom:20px;">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</span>
+            <span class="ct" style="color: rgb(46, 55, 106); font-weight: 700;margin-bottom:20px;">Catering Service, 42nd Living St, 43043 New York, NY</span>
+            <span class="ct" style="margin-bottom: 10px;">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</span>
+            <form action="./food.html" class="inputs" method="get">
+                <input type="text" placeholder="Name" required>
+                <input type="number" placeholder="how many people" required>
+                <input type="datetime-local" placeholder="date and time" required value="2024-08-08T22:00">
+                <input type="text" placeholder="Message/Special Requirement">
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <span>Powered by <u> w3.schools</u></span>
+    </footer>
+
+</body>
+</html>
