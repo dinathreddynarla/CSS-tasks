@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 50px 200px 100px 100px 50px;
+            gap: 10px;
+        }
+        .header {
+            grid-area: 1 / 1 / 2 / 6;
+            background-color: darkblue;
+            color: white;
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            
+        }
+        .header .title {
+            margin: 0;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: red;
+            width: 100%;
+            padding: 5px 0;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            grid-area: 2 / 1 / 3 / 6;
+            background-color: rgb(63, 63, 199);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main {
+            grid-area: 3 / 1 / 5 / 4;
+            background-color: darkblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image {
+            grid-area: 3 / 4 / 4 / 6;
+            background-color: lightskyblue;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .extra {
+            grid-area: 4 / 4 / 5 / 6;
+            background-color: lightgreen;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner {
+            grid-area: 5 / 1 / 6 / 6;
+            background-color: yellow;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">HEADER</h1>
+            <nav class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <section class="hero">HERO</section>
+        <section class="main">MAIN</section>
+        <section class="image">IMAGE</section>
+        <section class="extra">EXTRA</section>
+        <footer class="banner">BANNER</footer>
+    </div>
+</body>
+</html>
